@@ -31,7 +31,9 @@ public partial class Product
     [Display(Name = "Notas adicionales")]
     public string? Notes { get; set; }
 
+    [Display(Name = "Marcas")]
     public virtual Brand? Brand { get; set; }
 
+    [Display(Name = "Bodegas")]
     public virtual Warehouse? Warehouse { get; set; }
 }

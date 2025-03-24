@@ -35,7 +35,7 @@ namespace EGNS20250324.AppWebMVC.Controllers
             var marcas = _context.Brands.ToList();
             marcas.Add(new Brand { BrandName = "SELECCIONAR", Id = 0 });
             var marca2 = _context.Brands.ToList();
-            ViewData["BrandId"] = new SelectList(marcas, "BrandId", "BrandName", 0);
+            ViewData["Id"] = new SelectList(marcas, "Id", "BrandName", 0);
 
             return View(await query.ToListAsync());
             //return View(await _context.Brands.ToListAsync());

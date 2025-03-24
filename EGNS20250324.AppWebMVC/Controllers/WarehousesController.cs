@@ -35,7 +35,7 @@ namespace EGNS20250324.AppWebMVC.Controllers
             var bodegas = _context.Warehouses.ToList();
             bodegas.Add(new Warehouse { WarehouseName = "SELECCIONAR", Id = 0 });
             var bodeg = _context.Warehouses.ToList();
-            ViewData["WarehouseId"] = new SelectList(bodegas, "WarehouseId", "WarehouseName", 0);
+            ViewData["Id"] = new SelectList(bodegas, "Id", "WarehouseName", 0);
 
             return View(await query.ToListAsync());
 
