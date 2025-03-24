@@ -16,9 +16,11 @@ public partial class Product
     [Display(Name = "Descripción del Producto")]
     public string? Description { get; set; }
 
+    [Required(ErrorMessage = "*Precio del Producto es obligatorio.")]
     [Display(Name = "Precio del Producto")]
     public decimal Price { get; set; }
 
+    [Required(ErrorMessage = "*Precio compra es obligatorio.")]
     [Display(Name = "Precio compra del Producto")]
     public decimal PurchasePrice { get; set; }
 
